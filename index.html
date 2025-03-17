@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlappyBird Javascript</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body class="content">
     <h1>Flappy Bird</h1>
     <main tp-flappy>
         <!-- Jogo -->
-        <img class="bird" src="./images/passaro.png" alt="passaro" >
 
-        <div class="barrier-pair">
-            <div class="barrier">
-                <div class="barrier-body"></div>
-                <div class="barrier-border"></div>
-            </div>
-            <div class="barrier">
-                <div class="barrier-border"></div>
-                <div class="barrier-body"></div>             
-            </div>
-        </div>
-
-        <div class="progress">100</div>
-        
     </main>
-    <script src="./js/index.js"></script>    
+
+    <!-- Sobreposição de reinício -->
+    <div id="overlay" class="overlay">
+        <div class="message">
+            <h2>Você colidiu!</h2>
+            <p id="score" style="font-size: 70px; font-family: Pixel;"></p><!-- A pontuação será aqui -->
+            <p>Clique para reiniciar o jogo</p>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
